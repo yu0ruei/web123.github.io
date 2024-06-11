@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣介紹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* 使用常見的字體 */
+            margin: 0;
+            /* 清除預設的頁面邊距 */
+            padding: 0;
+            /* 清除預設的頁面內距 */
+        }
+
+        p,
+        footer {
+            padding: 20px;
+            /* 設定內邊距 */
+            margin: 20px auto;
+            /* 設定外邊距並居中對齊 */
+            max-width: 80%;
+            /* 設定最大寬度 */
+            color: black;
+            /* 設定文字顏色 */
+            line-height: 1.8;
+            /* 設定行高 */
+        }
+
+        #topBtn {
+            display: none;
+            /* 預設隱藏按鈕 */
+            position: fixed;
+            /* 固定位置 */
+            bottom: 20px;
+            /* 距離底部20px */
+            right: 30px;
+            /* 距離右側30px */
+            z-index: 99;
+            /* 確保按鈕在其他元素之上 */
+            font-size: 18px;
+            /* 設定文字大小 */
+            border: none;
+            /* 去掉邊框 */
+            outline: none;
+            /* 去掉輪廓 */
+            background-color: #555;
+            /* 設定背景色 */
+            color: white;
+            /* 設定文字顏色 */
+            cursor: pointer;
+            /* 指針變為手形 */
+            padding: 15px;
+            /* 設定內邊距 */
+            border-radius: 50%;
+            /* 圓形 */
+
+        }
+
+        #topBtn:hover {
+            background-color: #333;
+            /* 設定按鈕懸停背景色 */
+        }
+
+        a {
+            text-decoration: none;
+            /* 移除連結的下劃線 */
+        }
+
+        a:hover {
+            color: #f3550c;
+            /* 設定連結懸停時的顏色 */
+            text-decoration: underline;
+            /* 設定連結懸停時的下劃線 */
+        }
+
+        ul {
+            margin: 50px;
+            /* 設定列表外邊距 */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div
+            style="display: flex; align-items: center; justify-content: center; background-color: #f0f0f0; padding: 10px; height: 80px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+            <!-- 使用flexbox佈局，內容水平垂直居中，背景色為#f0f0f0，內邊距10px，高度80px，陰影效果，圓角10px -->
+
+            <h1 style="color: blue; text-align: center; margin: 0 auto;">台灣介紹</h1>
+            <div style="margin-left: auto;">
+                <button onclick="changeFontSize('small')"
+                    style="padding: 8px 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">小</button>
+                <button onclick="changeFontSize('medium')"
+                    style="margin-left: 10px; padding: 8px 16px; background-color: #d2a829; color: white; border: none; border-radius: 5px; cursor: pointer;">中</button>
+                <button onclick="changeFontSize('large')"
+                    style="margin-left: 10px; padding: 8px 16px; background-color: #F44336; color: white; border: none; border-radius: 5px; cursor: pointer;">大</button>
+                <button onclick="goToEhome()"
+                    style="margin-left: 10px; padding: 8px 16px; background-color: #2196F3; color: white; border: none; border-radius: 5px; cursor: pointer;">English
+                    Web</button>
+
+            </div>
+
+    </header>
+
+    <br>
+    <div>
+        <table style="margin: auto; width: 80%; border-collapse: collapse; border: 2px solid black;">
+            <tr>
+                <td style="text-align: center; border: 1px solid black;"><a href="about.html" target="_blank">作業介紹</a>
+                </td>
+                <td style="text-align: center; border: 1px solid black;"><a href="day.html" target="_blank">節慶</a></td>
+                <td style="text-align: center; border: 1px solid black;"><a href="0327.html" target="_blank">觀光景點</a>
+                </td>
+                <td style="text-align: center; border: 1px solid black;"><a href="folklore.html"
+                        target="_blank">台灣生態</a></td>
+                <td style="text-align: center; border: 1px solid black;"><a href="history.html" target="_blank">歷史</a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center; border: 1px solid black;"><a href="index.html" target="_blank">國家公園</a>
+                </td>
+                <td style="text-align: center; border: 1px solid black;"><a href="aboriginal.html"
+                        target="_blank">原住民</a></td>
+                <td style="text-align: center; border: 1px solid black;"><a href="craftsmanship.html"
+                        target="_blank">傳統工藝</a></td>
+                <td style="text-align: center; border: 1px solid black;"><a href="monuments.html"
+                        target="_blank">古蹟介紹</a></td>
+                <td style="text-align: center; border: 1px solid black;"><a href="palace.html" target="_blank">故宮</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <p>
+        在台灣，無論是節慶、觀光景點、生態環境、歷史、原住民文化、
+        國家公園、傳統工藝、古蹟，還是故宮博物院，都是這片土地上
+        獨特而引人入勝的一部分。
+        台灣以其豐富多彩的文化和風景，吸引著來自世界各地的遊客和
+        探索者，讓人們對這片土地充滿了好奇和向往。
+    </p>
+
+
+    <video controls style="display: block; margin: 0 auto; max-width: 70%; height: auto;">
+        <source src="images/view.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <p>
+        首先，我們來談談台灣的節慶。每逢春節，台灣大街小巷都充滿了
+        紅色的歡慶氣氛，人們忙碌地採買年貨，準備迎接新一年的到來。
+        而中秋節則是家人團聚的美好時刻，人們共同品嚐美味的月餅，仰
+        望滿天的明月，彼此分享情感和溫馨。除此之外，還有端午節的龍
+        舟競賽和七夕情人節的浪漫氣氛，這些節日讓台灣的傳統文化更加
+        豐富多彩。
+    </p>
+
+
+    <div style="text-align: center;">
+        <img src="images/ff.jpg" alt="春節圖片" style="max-height: 200px; margin-right: 10px;">
+        <img src="images/moon.jpg" alt="天燈圖片" style="max-height: 200px;margin-left: 10px;">
+    </div>
+
+    <p>接下來，我們不得不提及台灣的觀光景點。從壯麗的太魯閣國家公園
+        到風景如畫的日月潭，從古老的九份到現代的台北101，每一個景點
+        都各具特色，讓人讚嘆不已，心曠神怡。陽明山的溫泉和阿里山的
+        神木也是不容錯過的自然奇觀。無論是山林間的徒步旅行還是都市
+        中的現代建築，每一處都展示了台灣的多樣魅力。
+    </p>
+
+    <div style="text-align: center;">
+        <img src="images/101101.jpg" alt="101圖片" style="max-height: 200px; margin-right: 10px;">
+        <img src="images/9.jpg" alt="九份圖片" style="max-height: 200px;margin-left: 10px;">
+    </div>
+
+
+    <p>另外，談到台灣的國家公園，這些美麗的自然保護區不僅擁有壯麗的景觀
+        ，還是生物多樣性的寶庫。從太魯閣國家公園的大峽谷到玉山國家公園的
+        高山環境，每一處都值得探索，讓人們近距離感受大自然的奧妙。墾丁的
+        海洋生態和雪霸的高山動植物，也是自然愛好者的天堂。
+    </p>
+
+    <div style="text-align: center;">
+        <img src="images/yuyu.jpg" alt="玉山圖片" style="max-height: 200px; margin-right: 10px;">
+        <img src="images/titi.jpg" alt="太魯閣圖片" style="max-height: 200px;margin-left: 10px;">
+    </div>
+
+    <p>
+        此外，台灣以其獨特的生態和特有種聞名。
+        從溫帶森林到亞熱帶雨林，從高山草原到沿海濕地
+        ，台灣的生態系統豐富多樣。許多特有的物種，如
+        台灣黑熊、台灣藍鵲等，都在這片土地上繁衍生息。
+        這些珍貴的生態資源不僅豐富了台灣的自然遺產，也
+        吸引著來自世界各地的生態學家和自然愛好者。
+    </p>
+
+    <div style="text-align: center;">
+        <img src="images/bear.jpg" alt="台灣黑熊圖片" style="max-height: 200px; margin-right: 10px;">
+        <img src="images/blue.jpg" alt="台灣藍鵲圖片" style="max-height: 200px;margin-left: 10px;">
+    </div>
+
+    <p>而台灣的原住民文化更是這片土地上不可或缺的一部分。他們的傳統歌舞
+        、手工藝品以及對大自然的崇敬，都展現了他們與這片土地深厚的情感
+        和連結。阿美族的豐年祭、泰雅族的紋面傳統，這些文化活動和風俗習
+        慣，讓台灣的文化多樣性更加豐富。
+    </p>
+
+    <div style="text-align: center;">
+        <img src="images/abab.jpg" alt="原住民圖片" style="max-height: 220px; margin-right: 10px;">
+    </div>
+
+    <p>台灣的歷史悠久而豐富，從荷蘭時期的歷史建築到二二八事件的紀念館，
+        每一處古蹟都見證了這個島嶼的變遷與發展，讓人們對這片土地的歷史
+        和文化有更深的體會。清朝的古堡、日治時期的建築以及戰後的現代化
+        發展，都在不同的時代留下了深刻的印記。
+    </p>
+
+    <div style="text-align: center;">
+        <img src="images/r.jpg" alt="紅毛城圖片" style="max-height: 220px; margin-right: 10px;">
+        <img src="images/999.jpg" alt="赤崁樓圖片" style="max-height: 220px;margin-left: 10px;">
+    </div>
+
+    <p>此外，台灣的傳統工藝也是值得一提的寶藏，如剪紙、刺繡、陶瓷等，這
+        些工藝品承載著悠久的歷史和文化，反映了台灣人民的智慧和創造力。鹿港的
+        木雕、鶯歌的陶藝、苗栗的藺草編織，這些傳統工藝不僅保存了古老
+        技藝，也在現代設計中煥發新生。
+    </p>
+
+    <div style="text-align: center;">
+        <img src="images/wood.jpg" alt="木雕圖片" style="max-height: 200px; margin-right: 10px;">
+        <img src="images/in.jpg" alt="陶藝圖片" style="max-height: 200px;margin-left: 10px;">
+    </div>
+
+    <p>最後，不可忽略的是台灣的故宮博物院，這座匯集了中國五千年文明的寶庫
+        ，展示了豐富的文化遺產和藝術精品，吸引著無數遊客和學者前來參觀和
+        研究。從青銅器到書畫，從瓷器到玉器，每一件藏品都講述著一段歷史，
+        讓人們在欣賞中感受文化的深厚底蘊。
+    </p>
+
+    <div style="text-align: center;">
+        <img src="images/p.jpg" alt="故宮圖片" style="max-height: 300px;">
+    </div>
+
+    <p>
+        總的來說，台灣以其多元文化、迷人風光和豐富歷史，成為一個值得探索
+        的寶地，吸引著來自世界各地的遊客，並讓人們對這片土地充滿了好奇和
+        向往。這裡的每一個角落，每一個故事，都等待著被發現和分享。無論是
+        沉浸在自然美景中，還是探尋歷史遺跡，台灣都能給予每一位訪客獨特而
+        難忘的經歷。
+    </p>
+
+    <div style="text-align: center;">
+        <img src="images/v.jpg" alt="風景圖片" style="max-width: 300px; margin-right: 15px;">
+        <img src="images/l.jpg" alt="天燈圖片" style="max-width: 300px;margin-left: 15px;">
+    </div>
+
+    <button onclick="scrollToTop()" id="topBtn" title="回到頂部">Top</button>
+
+    <footer>
+        <h3>引用參考資料</h3>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=yyttxJz1p4w&t=700s&pp=ygUM5Y-w54Gj6aKo5pmv">影片連結</a></li>
+        </ul>
+    </footer>
+
+
+    <script>
+        // 定義函數以改變段落文字大小
+        function changeFontSize(size) {
+            var paragraphs = document.querySelectorAll('p'); // 選取所有段落元素
+            paragraphs.forEach(function (paragraph) { // 對每個段落元素進行迭代
+                if (size === 'small') {
+                    paragraph.style.fontSize = '16px'; // 如果選擇'small'，設定字體大小為16px
+                } else if (size === 'medium') {
+                    paragraph.style.fontSize = '20px'; // 如果選擇'medium'，設定字體大小為20px
+                } else if (size === 'large') {
+                    paragraph.style.fontSize = '25px'; // 如果選擇'large'，設定字體大小為25px
+                }
+            });
+        }
+
+        // 當用戶滾動時顯示或隱藏回到頂部按鈕
+        window.onscroll = function () { scrollFunction() };
+
+        // 定義滾動時的回調函數
+        function scrollFunction() {
+            var topBtn = document.getElementById("topBtn"); // 獲取回到頂部按鈕
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block"; // 如果滾動距離超過20px，顯示按鈕
+            } else {
+                topBtn.style.display = "none"; // 否則隱藏按鈕
+            }
+        }
+
+        // 定義平滑滾動到頂部的函數
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // 滾動到頁面頂部，行為為平滑滾動
+        }
+
+        // 定義函數以導航到英文頁面
+        function goToEhome() {
+            window.location.href = "ehome.html"; // 導航到ehome.html
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

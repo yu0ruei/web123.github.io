@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>著名古蹟景點介紹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #edaa1b;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+            /* 确保按钮在伪元素上方 */
+        }
+
+        .home-button:hover {
+            background-color: #d19316;
+        }
+
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            /* 圓形 */
+        }
+
+        #topBtn:hover {
+            background-color: #333;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .slides {
+            display: none;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* 隐藏左右切换按钮 */
+        .prev,
+        .next {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color: blue; text-align: center;">古蹟介紹</h1>
+    <div style="text-align: center; background-color: aquamarine;">
+        <hr>
+        <a href="https://www.wenwu.org.tw/">維基百科</a>&emsp;
+        <a href="https://nchdb.boch.gov.tw/">國家文化資產網</a>&emsp;
+        <a href="https://www.taiwan.net.tw/m1.aspx?sNo=0000193&id=31">旅遊台灣</a>
+        <hr>
+    </div>
+
+
+    <h2>台北故宮博物院</h2>
+    <div class="slideshow-container" style="text-align: center;">
+        <div class="slides">
+            <img src="images/1.jpg" style="max-height: 200px">
+        </div>
+        <div class="slides">
+            <img src="images/2.jpg" style="max-height: 200px">
+        </div>
+        <div class="slides">
+            <img src="images/3.jpg" style="max-height: 200px">
+        </div>
+        <div class="slides">
+            <img src="images/4.jpg" style="max-height: 200px">
+        </div>
+        <div class="slides">
+            <img src="images/5.jpg" style="max-height: 200px">
+        </div>
+        <div class="slides">
+            <img src="images/6.jpg" style="max-height: 200px">
+        </div>
+        <div class="slides">
+            <img src="images/7.jpg" style="max-height: 200px">
+        </div>
+        <div class="slides">
+            <img src="images/8.jpg" style="max-height: 200px">
+        </div>
+
+    </div>
+
+    <p>位於台北市士林區，故宮博物院是台灣最知名的博物館之一，也是世界上最重要的中國古蹟之一。其建築風格獨特，採用了宮殿式的設計，氣派宏偉，彰顯了中華文化的瑰麗與壯麗。這座博物館收藏了大量珍貴的中國文物，包括書畫、陶瓷、玉器、青銅器等，其中不乏世界珍品。遊客在故宮博物院可以深入了解中國悠久的文化歷史，感受中華文明的博大精深。除了展示文物，故宮也舉辦各種文化活動和展覽，豐富了人們的文化生活，成為了台灣不可或缺的文化標誌。
+    </p>
+
+    <h2>臺南安平古堡</h2>
+    <div style="text-align: center;">
+        <img src="images/tinan.jpg" alt="安平古堡圖片" style="max-height: 160px; margin-right: 5px;">
+        <img src="images/boon.jpg" alt="安平古堡圖片" style="max-height: 160px; margin-left: 5px;">
+
+    </div>
+    <p>位於臺南市安平區的安平古堡，是荷蘭東印度公司在17世紀所建的要塞，也是台灣最古老的石頭建築之一。這座古堡見證了台灣歷史上荷蘭統治的時期，承載著許多故事和歷史事件。在安平古堡內部，遊客可以漫步於厚重的城牆之間，感受當年殖民統治的氛圍，並探索其獨特的建築風格。古堡周邊環繞著壯麗的海景，讓人彷彿能夠聽見當年風雨飄搖中的荷蘭船隊呼喊聲。如今，安平古堡已成為一處受歡迎的觀光景點，吸引著許多遊客前來探訪。遊客在古堡內可以感受到歷史的厚重氛圍，同時也能在周邊海景中尋找片刻的寧靜與放鬆。無論是對歷史文化感興趣的遊客，還是喜愛風景的自然愛好者，安平古堡都是一個值得一訪的地方。
+    </p>
+
+    <h2>國立中正紀念堂</h2>
+    <div style="text-align: center;">
+        <img src="images/cen.jpg" alt="中正紀念堂圖片" style="max-height: 200px; margin-right: 10px;">
+        <img src="images/sol.jpg" alt="中正紀念堂圖片" style="max-height: 200px; margin-left: 10px;">
+    </div>
+    <p>位於台北市中正區的中正紀念堂是為了紀念中華民國國父孫中山先生而建立的紀念性建築物。這座建築融合了中國古典與現代元素，展現出獨特的建築風格。中正紀念堂的建築氣派宏偉，其壯觀的外觀和獨特的意義使其成為台灣的重要象徵之一。除了作為紀念孫中山先生的場所外，中正紀念堂也是台北市的重要地標和旅遊景點之一。許多遊客來到這裡，不僅是為了欣賞其美麗的建築，還為了感受其中蘊含的濃厚歷史氛圍和文化意義。在這裡，遊客可以參觀中正紀念堂內的展覽，了解孫中山先生的生平和事跡，並且在廣場上觀賞儀式和表演，體驗台灣豐富多彩的文化生活。
+    </p>
+
+    <h2>日月潭文武廟</h2>
+    <div style="text-align: center;">
+        <img src="images/tem.jpg" alt="廟圖片" style="max-height: 200px; margin-right: 10px;">
+        <img src="images/temple.jpg" alt="廟圖片" style="max-height: 200px; margin-left: 10px;">
+    </div>
+    <p>位於南投縣魚池鄉的日月潭畔，鎮瀾宮是台灣最著名的廟宇之一。這座廟宇供奉了眾多神祇，包括關帝、文昌等，吸引著許多民眾前來祈福、朝拜和參加宗教儀式。作為日月潭地區的重要信仰中心，鎮瀾宮不僅是一個宗教場所，也是文化和歷史的象徵。其建築風格融合了傳統和現代元素，展現出獨特的魅力。遊客來到這裡，除了感受宗教氛圍和神聖氣息外，還可以欣賞到周邊壯麗的自然景觀，如湖光山色和清新空氣，讓人心曠神怡。鎮瀾宮所在的日月潭畔更是一處觀光勝地，吸引著來自世界各地的遊客，他們在這裡探索台灣獨特的宗教文化，感受自然與信仰的交融之美。
+    </p>
+
+    <h2>奇美博物館</h2>
+    <div style="text-align: center;">
+        <img src="images/chi.jpg" alt="博物館圖片" style="max-height: 170px; margin-right: 10px;">
+        <img src="images/el.jpg" alt="博物館圖片" style="max-height: 170px; margin-left: 10px;">
+    </div>
+    <p>位於台南市白河區，王永慶美術館是台灣企業家王永慶先生所建立的一座重要文化機構。這座美術館以其獨特的建築風格和豐富的藏品吸引了眾多遊客和藝術愛好者前來參觀。館內收藏了大量珍貴的中國藝術品，包括瓷器、書畫、青銅器等，展示了中國藝術的博大精深，為觀眾呈現了一場視覺盛宴。除了常設展覽外，王永慶美術館還定期舉辦各類特展和文化活動，豐富了參觀者的文化體驗。這座美術館不僅是一個展示中國傳統藝術的場所，也是藝術交流和學術研究的重要平台，為推動台灣藝術事業的發展做出了重要貢獻。
+    </p>
+
+    <h2>淡水老街</h2>
+    <div style="text-align: center;">
+        <img src="images/da.jpg" alt="老街圖片" style="max-height: 200px; margin-right: 10px;">
+    </div>
+    <p>位於新北市淡水區的老街，是台灣最具特色的古老街道之一，也是淡水地區的文化象徵之一。這條老街歷史悠久，保留了許多日治時期的建築風貌，如老式木構建築、騎樓式房屋等，彷彿讓人穿越時光隧道，感受到過去的風情。在這條街道上，滿滿的懷舊氛圍讓人感到格外溫馨，每一個角落都充滿了故事和回憶。除了古老的建築外，淡水老街還是一個集美食、文創、手工藝品等多元元素於一身的地方。遊客可以品嚐到各種道地的台灣美食，如鳳梨酥、阿給、魚丸湯等，同時還可以品味到濃郁的咖啡香氣和手工冰淇淋的甜蜜滋味。此外，淡水老街也是許多特色商品的聚集地，街頭攤販琳琅滿目的商品吸引了眾多遊客前來觀光購物。熱鬧的街景、獨特的文化氛圍以及豐富的美食資源，使淡水老街成為了台灣北部地區不可錯過的旅遊景點之一。
+    </p>
+
+    <h2>九份老街</h2>
+    <div style="text-align: center;">
+        <img src="images/99.jpg" alt="九份圖片" style="max-height: 200px; margin-right: 10px;">
+        <img src="images/9.jpg" alt="九份圖片" style="max-height: 200px; margin-right: 10px;">
+    </div>
+    <p>位於新北市瑞芳區的小鎮，是台灣充滿懷舊氛圍的一處寶地。這個小鎮的建築風格深受日治時期的影響，許多建築物至今仍然保留著當時的風貌和特色。漫步在這條小鎮的街道上，可以感受到濃厚的歷史底蘊，狹窄曲折的街道彷彿在訴說著過去的故事。古老的建築散發著懷舊的氣息，讓人仿佛置身於時光隧道之中。不少電影和電視劇都選擇在這裡取景，因為這裡的獨特風格和懷舊氛圍能為作品增添許多情感色彩。除了建築物，這個小鎮還擁有豐富多彩的文化和傳統活動。在這裡，可以品味到道地的台灣美食，體驗到悠久的傳統工藝，感受到濃厚的地方文化。每一個角落都充滿著生活的氣息和人情味，吸引著許多遊客前來探訪和體驗。縱使時光流轉，這個小鎮仍然保留著自己獨特的魅力，成為了人們追尋懷舊情懷的理想去處。
+    </p>
+
+    <h2>台中彩虹眷村</h2>
+    <div style="text-align: center;">
+        <img src="images/draw.jpg" alt="眷村圖片" style="max-height: 200px; margin-right: 10px;">
+        <img src="images/draw1.jpg" alt="眷村圖片" style="max-height: 200px; margin-right: 10px;">
+    </div>
+    <p>位於台中市南區的彩繪村落，是昔日軍眷宿舍的重新詮釋和改造，展現出獨特的藝術風格和生動的色彩世界。這個村落的房屋都被塗上了繽紛的彩繪，每一幅彩繪作品都散發著獨特的魅力，呈現出豐富多彩的視覺效果。走在村中的小巷裡，彷彿進入了一幅幅生動的畫卷，每一個角落都充滿了驚喜和趣味。這些彩繪作品不僅展現了藝術家的創意和技巧，也讓這個原本平凡的村落焕發出新的生命力和活力。彩繪村落不僅是一個藝術的展示空間，也成為了許多遊客前來打卡拍照的熱門景點。遊客們在這裡可以感受到濃厚的藝術氛圍，尋找到屬於自己的美好時刻，同時也為這個特色村落增添了更多的生機和活力。隨著時間的推移，彩繪村落將繼續吸引著更多的遊客前來探訪，成為台中市南區獨具特色的文化地標之一。
+    </p>
+
+    <h2>台南孔廟</h2>
+    <div style="text-align: center;">
+        <img src="images/school.jpg" alt="孔廟圖片" style="max-height: 200px; margin-right: 10px;">
+        <img src="images/school1.jpg" alt="孔廟圖片" style="max-height: 200px; margin-right: 10px;">
+    </div>
+    <p>位於台南市的孔廟是台灣保存最完整的孔廟之一，也是全球華人社會中最古老的孔廟之一。這座建築以其精美的木雕和石刻而聞名，是對孔子的敬仰和紀念之所。孔廟內部供奉著孔子及其弟子，並擁有許多珍貴的古代文物和書籍，包括對孔子思想的解釋和詮釋，以及古代經典的抄寫和收藏。這座建築不僅是一個宗教場所，也是一個文化遺產，吸引了許多學者和遊客前來參觀和研究。遊客們在這裡可以感受到濃厚的儒家文化氛圍，了解到孔子的思想和影響，同時也可以欣賞到這座建築的藝術價值和歷史意義。孔廟的存在不僅展示了台灣對中國儒家文化的尊重和傳承，也彰顯了台灣作為一個多元文化社會的獨特魅力。
+    </p>
+
+
+
+
+
+    <a href="home.html" class="home-button">首頁</a>
+
+    <button onclick="scrollToTop()" id="topBtn" title="回到頂部">Top</button>
+
+    <hr>
+
+
+
+
+    <footer>
+        <h3>相關網站</h3>
+        <ul>
+            <li><a href="https://nchdb.boch.gov.tw/" target="_blank">故宮官網</a></li>
+            <li><a href="https://www.cksmh.gov.tw/" target="_blank">中正紀念堂官網</a></li>
+            <li><a href="https://www.wenwu.org.tw/" target="_blank">文武廟官網</a></li>
+            <li><a href="https://www.chimeimuseum.org/" target="_blank">奇美博物館官網</a></li>
+            <li><a href="https://newtaipei.travel/zh-tw/Attractions/Detail/109658" target="_blank">淡水老街觀光旅遊網</a></li>
+            <li><a href="https://newtaipei.travel/zh-tw/attractions/detail/109990" target="_blank">九份觀光旅遊網</a></li>
+            <li><a href="https://travel.taichung.gov.tw/zh-tw/attractions/intro/574" target="_blank">彩虹村觀光旅遊網</a></li>
+            <li><a href="https://www.tn-confucius.org.tw/" target="_blank">孔廟官網</a></li>
+        </ul>
+    </footer>
+    <script>
+        // 設定幻燈片的索引
+        var slideIndex = 0;
+        // 開始顯示幻燈片
+        showSlides();
+
+        function showSlides() {
+            var i;
+            // 取得所有幻燈片元素
+            var slides = document.getElementsByClassName("slides");
+            // 隱藏所有幻燈片
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            // 增加索引值
+            slideIndex++;
+            // 若索引值大於幻燈片數量，則設為 1
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            // 顯示目前索引值對應的幻燈片
+            slides[slideIndex - 1].style.display = "block";
+            // 設定 3 秒後切換到下一張幻燈片
+            setTimeout(showSlides, 3000);
+        }
+
+        // 顯示/隱藏回到頂部按鈕
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            var topBtn = document.getElementById("topBtn");
+            // 若滾動距離超過 20 像素，則顯示按鈕，否則隱藏
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        }
+
+        // 平滑滾動到頂部
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國家公園</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* 使用常見的字體 */
+            line-height: 1.6;
+            /* 設定行高 */
+            color: #333;
+            /* 設定文字顏色 */
+            margin: 0;
+            /* 清除預設的頁面邊距 */
+            padding: 20px;
+            /* 清除預設的頁面內距 */
+        }
+
+        header {
+            background-color: #f5f5f5;
+            /* 設定標頭背景色 */
+            padding: 20px 0;
+            /* 設定標頭上下內距 */
+        }
+
+        h1 {
+            color: blue;
+            /* 設定標題顏色 */
+            text-align: center;
+            /* 文字置中 */
+            text-shadow: 2px 2px 4px #ccc;
+            /* 添加陰影效果 */
+        }
+
+        .content {
+            max-width: 800px;
+            /* 設定最大寬度 */
+            margin: 20px auto;
+            /* 設定外邊距，讓內容居中 */
+            padding: 0 40px;
+            /* 設定左右內邊距 */
+        }
+
+        .home-button {
+            position: fixed;
+            /* 固定位置 */
+            top: 10px;
+            /* 距離頂部10px */
+            right: 10px;
+            /* 距離右側10px */
+            background-color: #edaa1b;
+            /* 設定背景色 */
+            color: #fff;
+            /* 設定文字顏色 */
+            border: none;
+            /* 去掉邊框 */
+            padding: 8px 16px;
+            /* 設定內邊距 */
+            border-radius: 5px;
+            /* 設定圓角 */
+            cursor: pointer;
+            /* 指針變為手形 */
+            z-index: 2;
+            /* 確保按鈕在其他元素之上 */
+        }
+
+        .home-button:hover {
+            background-color: #d19316;
+            /* 設定按鈕懸停背景色 */
+        }
+
+        h2 {
+            color: #1a73e8;
+            /* 設定次標題顏色 */
+        }
+
+        h3 {
+            margin: 50px;
+            /* 設定標題外邊距 */
+        }
+
+        ul {
+            margin: 50px;
+            /* 設定列表外邊距 */
+        }
+
+        h4,
+        p {
+            padding-left: 50px;
+            padding-right: 50px;
+            /* 設定左右內邊距 */
+            text-align: justify;
+            /* 文字兩端對齊 */
+        }
+
+        img {
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+            /* 設定圖片陰影效果 */
+            border-radius: 8px;
+            /* 設定圖片圓角 */
+        }
+
+        table {
+            width: 80%;
+            /* 設定表格寬度 */
+            margin: 20px auto;
+            /* 設定表格外邊距，讓表格居中 */
+            border-collapse: collapse;
+            /* 合併邊框 */
+        }
+
+        th,
+        td {
+            padding: 10px;
+            /* 設定單元格內邊距 */
+            border: 1px solid #ddd;
+            /* 設定單元格邊框 */
+            text-align: center;
+            /* 文字置中 */
+            font-size: 25px;
+            /* 設定文字大小 */
+        }
+
+        th {
+            background-color: #f2f2f2;
+            /* 設定表頭背景色 */
+        }
+
+        #topBtn {
+            display: none;
+            /* 預設隱藏按鈕 */
+            position: fixed;
+            /* 固定位置 */
+            bottom: 20px;
+            /* 距離底部20px */
+            right: 30px;
+            /* 距離右側30px */
+            z-index: 99;
+            /* 確保按鈕在其他元素之上 */
+            font-size: 18px;
+            /* 設定文字大小 */
+            border: none;
+            /* 去掉邊框 */
+            outline: none;
+            /* 去掉輪廓 */
+            background-color: #555;
+            /* 設定背景色 */
+            color: white;
+            /* 設定文字顏色 */
+            cursor: pointer;
+            /* 指針變為手形 */
+            padding: 15px;
+            /* 設定內邊距 */
+            border-radius: 50%;
+            /* 圓形 */
+
+        }
+
+        #topBtn:hover {
+            background-color: #333;
+            /* 設定按鈕懸停背景色 */
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>國家公園</h1>
+    </header>
+    <div style="text-align: center; background-color: aquamarine;">
+        <hr>
+        <a href="https://www.taiwan.net.tw/m1.aspx?SNo=0042714" target="_blank">觀光署介紹</a>&emsp;
+        <a href="https://zh.wikipedia.org/zh-tw/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%9C%8B%E5%AE%B6%E5%85%AC%E5%9C%92"
+            target="_blank">維基百科介紹</a>&emsp;
+        <a href="https://www.nps.gov.tw/" target="_blank">國家公園署</a>
+        <hr>
+    </div>
+
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">目錄</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>國家公園</td>
+                    <td>風景圖片</td>
+                </tr>
+                <tr>
+                    <td><a href="#yushan">玉山國家公園</a></td>
+                    <td><img src="images/y0.jpg" width="150"></td>
+                </tr>
+                <tr>
+                    <td><a href="#yangmin">陽明山國家公園</a></td>
+                    <td><img src="images/yy0.jpg" width="150"></td>
+                </tr>
+                <tr>
+                    <td><a href="#k">墾丁國家公園</a></td>
+                    <td><img src="images/k0.jpg" width="150"></td>
+                </tr>
+                <tr>
+                    <td><a href="#c">金門國家公園</a></td>
+                    <td><img src="images/c0.jpg" width="150"></td>
+                </tr>
+                <tr>
+                    <td><a href="#s">雪霸國家公園</a></td>
+                    <td><img src="images/s0.jpg" width="150"></td>
+                </tr>
+                <tr>
+                    <td><a href="#t">太魯閣國家公園</a></td>
+                    <td><img src="images/tii.jpg" width="150"></td>
+                </tr>
+                <tr>
+                    <td><a href="#ti">台江國家公園</a></td>
+                    <td><img src="images/tt.jpg" width="150"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+    <h3 id="yushan">玉山國家公園</h3>
+    <img src="images/玉山.jpg" width="250" height="250" style="margin-left: 50px;">
+
+
+    <h4>玉山國家公園標誌意涵</h4>
+    <p style=" text-align: justify">
+        玉山國家公園管理處處徽呈現玉山國家公園範圍所轄，有右邊的
+        漢文化（圖騰）與左邊的原住民文化（圖騰）和諧共融，同時有靠
+        人類的雙手及智慧共同維護這片好山好水下的動物植物等生物資
+        源，讓大地生生不息。
+    </p>
+    <video controls style="display: block; margin: 0 auto; max-width: 70%; height: auto;">
+        <source src="images/玉山.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+
+    <hr>
+    <h3 id="yangmin">陽明山國家公園</h3>
+    <img src="images/logo_06.jpg" width="250" height="250" style="margin-left: 50px;"><br>
+    <h4>陽明山國家公園標誌意涵</h4>
+    <p style="text-align: justify;">
+        本處處徽設計概念係以展現陽明山火山地質地形為主軸，
+        圖形系統-與現有之其他四座國家公園採相同之基本輪廓，
+        亦代表整個地球與物質循環、生生不息，永續利用之保育
+        觀念。此三角形代表陽明山國家公園係以火山地形為主體
+        資源。三角凹凸形狀，代表區內之最高峰--七星山。圍繞
+        三角形外之波紋代表陽明山國家公園特殊之噴氣、硫煙及
+        雨霧。以此抽象之樹型，代表自然界之動植物。標誌採綠
+        底藍紋即意喻綠地與藍天是人類生存的空間所在。
+        <a href="#up">置頂</a>
+    </p>
+    <video controls style="display: block; margin: 0 auto; max-width: 70%; height: auto;">
+        <source src="images/陽明山.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+
+    <hr>
+    <h3 id="k">墾丁國家公園</h3>
+    <img src="images/k.jpg" width="250" height="250" style="margin-left: 50px;"><br>
+
+    <h4>墾丁國家公園標誌意涵</h4>
+    <p style="text-align: justify;">
+        本處處徽設計概念係以展現陽明山火山地質地形為主軸，
+        圖形系統-與現有之其他四座國家公園採相同之基本輪廓，
+        亦代表整個地球與物質循環、生生不息，永續利用之保育
+        觀念。此三角形代表陽明山國家公園係以火山地形為主體
+        資源。三角凹凸形狀，代表區內之最高峰--七星山。圍繞
+        三角形外之波紋代表陽明山國家公園特殊之噴氣、硫煙及
+        雨霧。以此抽象之樹型，代表自然界之動植物。標誌採綠
+        底藍紋即意喻綠地與藍天是人類生存的空間所在。
+    </p>
+    <video controls style="display: block; margin: 0 auto; max-width: 70%; height: auto;">
+        <source src="images/墾丁.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+
+    <hr>
+
+    <h3 id="c">金門國家公園</h3>
+    <img src="images/c.png" width="250" height="250" style="margin-left: 50px;"><br>
+    <h4>金門國家公園標誌意涵</h4>
+    <p style="text-align: justify;">
+        金門國家公園管理處處徽標誌以傳統閩南式建築的馬背
+        造型，搭配代表吉祥的紅色構成整體圖案主軸，突顯金門
+        豐富的人文史蹟與傳統聚落，外圈則以綠色代表金門亦有
+        豐富的自然資源，例如鳥類等自然資源。
+    </p>
+    <video controls style="display: block; margin: 0 auto; max-width: 70%; height: auto;">
+        <source src="images/金門.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+
+    <hr>
+
+    <h3 id="s">雪霸國家公園</h3>
+    <img src="images/s.jpg" width="250" height="250" style="margin-left: 50px;"><br>
+    <h4> 雪霸國家公園標誌意涵</h4>
+    <p style="text-align: justify;">
+        雪霸國家公園管理處處徽標誌呈現園區資源特色：
+        山岳表示以雪山及大霸尖山為代表的山岳型國家公園；
+        蜿蜒連綿的綠水取源遠流長的意義；櫻花鉤吻鮭則是突
+        顯出國家公園生態保育的重責大任；而青山綠水是環保
+        的理想園地，亦顯現國家公園百年大計的事業！
+    </p>
+    <video controls style="display: block; margin: 0 auto; max-width: 70%; height: auto;">
+        <source src="images/雪霸.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+
+    <hr>
+
+    <h3 id="t">太魯閣國家公園</h3>
+    <img src="images/t.jpg" width="250" height="250" style="margin-left: 50px;"><br>
+
+    <h4>太魯閣國家公園標誌意涵</h4>
+
+    <p style="text-align: justify;">
+        太魯閣國家公園管理處處徽呈現高山、森林、峽谷一線天，
+        三棵樹代表「森林」、左右 V 形色塊代表「峽谷」，峽谷
+        中間有雪覆蓋的山代表「高山」。太魯閣國家公園以雄偉壯
+        麗、幾近垂直的大理石峽谷景觀聞名。沿途立霧溪的峽谷
+        風景線而行，觸目所及皆是壁立千仞的峭壁、斷崖、峽谷
+        、連綿曲折的山洞隧道、大里岩層及溪流等風光。
+    </p>
+    <video controls style="display: block; margin: 0 auto; max-width: 70%; height: auto;">
+        <source src="images/太魯閣.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <hr>
+
+    <h3 id="ti">台江國家公園</h3>
+    <img src="images/ti.jpg" width="250" height="250" style="margin-left: 50px;"><br>
+    <h4>台江國家公園標誌意涵</h4>
+    <p style="text-align: justify;">
+        台江國家公園管理處處徽採以河口、黑面琵鷺加上台灣船、鲲鯓
+        （沙洲）為設計元素，表現陸域資源特色及台江先民勇渡黑水溝
+        （台灣海峽）墾拓顯著歷史，象徵台江國家公園的使命與目標。
+        色彩上以「綠色」表現自然生態生生不息，「藍色」寓意海洋生
+        態資源豐沛之意象，整體造形既傳達台灣歷史足跡，更表現出台
+        江國家公園獨有的特色。
+    </p>
+
+    <a href="home.html" class="home-button">首頁</a>
+    <video controls style="display: block; margin: 0 auto; max-width: 70%; height: auto;">
+        <source src="images/台江.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <button onclick="scrollToTop()" id="topBtn" title="回到頂部">Top</button>
+    <br>
+    <hr>
+
+    <footer>
+        <h3>引用參考資料</h3>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=lf45e21gGx8&list=PLjOU2W1gMx-8hmrHqhgTr0bu7-3w074xb&index=7"
+                    target="_blank">玉山影片</a></li>
+            <li><a href="https://www.youtube.com/watch?v=MJ9ujVIU-pk&list=PLjOU2W1gMx-8hmrHqhgTr0bu7-3w074xb">陽明山影片</a>
+            </li>
+            <li><a
+                    href="https://www.youtube.com/watch?v=OMtT5Yt-gPM&list=PLjOU2W1gMx-8hmrHqhgTr0bu7-3w074xb&index=11">墾丁影片</a>
+            </li>
+            <li><a
+                    href="https://www.youtube.com/watch?v=bkLTEduDuSI&list=PLjOU2W1gMx-8hmrHqhgTr0bu7-3w074xb&index=13">金門影片</a>
+            </li>
+            <li><a
+                    href="https://www.youtube.com/watch?v=n2fIcYXqqfI&list=PLjOU2W1gMx-8hmrHqhgTr0bu7-3w074xb&index=3">雪霸影片</a>
+            </li>
+            <li><a
+                    href="https://www.youtube.com/watch?v=Vi8uklkiCks&list=PLjOU2W1gMx-8hmrHqhgTr0bu7-3w074xb&index=5">太魯閣影片</a>
+            </li>
+            <li><a
+                    href="https://www.youtube.com/watch?v=PQAb_Xg3Yl8&list=PLjOU2W1gMx-8hmrHqhgTr0bu7-3w074xb&index=9">台江影片</a>
+            </li>
+
+        </ul>
+    </footer>
+    <script>
+        // 當用戶滾動頁面時，調用 scrollFunction 函數
+        window.onscroll = function () { scrollFunction() };
+
+        // 定義 scrollFunction 函數，用於顯示或隱藏 "回到頂部" 按鈕
+        function scrollFunction() {
+            // 獲取 "回到頂部" 按鈕的 DOM 元素
+            var topBtn = document.getElementById("topBtn");
+
+            // 檢查頁面的滾動位置
+            // 如果滾動位置大於 20 像素，顯示 "回到頂部" 按鈕
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block";
+            } else {
+                // 否則，隱藏 "回到頂部" 按鈕
+                topBtn.style.display = "none";
+            }
+        }
+
+        // 定義 scrollToTop 函數，用於平滑滾動到頁面頂部
+        function scrollToTop() {
+            // 使用 window.scrollTo 方法並設置 { top: 0, behavior: 'smooth' } 來平滑滾動到頁面頂部
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+
+</html>

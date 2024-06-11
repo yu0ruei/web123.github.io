@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>觀光景點</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            position: relative;
+            background-image: url('images/101.jpg');
+            /* 背景圖片路徑 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+            /* 白色半透明遮罩 */
+            z-index: -1;
+        }
+
+
+        img[usemap] {
+            z-index: 2;
+        }
+
+
+        .home-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #edaa1b;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+            text-decoration: none;
+            /* 移除底線 */
+        }
+
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            /* 圓形 */
+        }
+
+        #topBtn:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: rgb(39, 15, 217);text-align: center;">各地觀光景點</h1>
+
+    <section style="color: rgb(16, 17, 15); text-align: center;">
+        <p style="font-size: large; font-weight: bold;">
+            點選各地區名稱，會跑出該地區觀光景點
+        </p>
+        <hr>
+        <img src="images/taiwanmap.png" height="800" width="500" usemap="#Mymap" alt="錯誤">
+        <map name="Mymap">
+            <area shape="circle" coords="470,100,45" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001105" alt="基隆市"
+                target="_blank" title="基隆市">
+            <area shape="circle" coords="345,100,20" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001090" alt="台北市"
+                target="_blank" title="台北市">
+            <area shape="circle" coords="410,155,30" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001091" alt="新北市"
+                target="_blank" title="新北市">
+            <area shape="circle" coords="315,125,20" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001107" alt="桃園市"
+                target="_blank" title="桃園市">
+            <area shape="circle" coords="250,170,30" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001109" alt="新竹市"
+                target="_blank" title="新竹市">
+            <area shape="circle" coords="340,200,30" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001108" alt="新竹縣"
+                target="_blank" title="新竹縣">
+            <area shape="circle" coords="415,230,35" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001106" alt="宜蘭縣"
+                target="_blank" title="宜蘭縣">
+            <area shape="circle" coords="280,250,25" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001110" alt="苗栗縣"
+                target="_blank" title="苗栗縣">
+            <area shape="circle" coords="250,300,20" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001112" alt="台中市"
+                target="_blank" title="台中市">
+            <area shape="circle" coords="195,340,25" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001113" alt="彰化縣"
+                target="_blank" title="彰化縣">
+            <area shape="circle" coords="185,400,25" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001115" alt="雲林縣"
+                target="_blank" title="雲林縣">
+            <area shape="circle" coords="280,375,30" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001114" alt="南投縣"
+                target="_blank" title="南投縣">
+            <area shape="circle" coords="380,375,40" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001124" alt="花蓮縣"
+                target="_blank" title="花蓮縣">
+            <area shape="circle" coords="330,555,30" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001123" alt="台東縣"
+                target="_blank" title="台東縣">
+            <area shape="circle" coords="150,450,25" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001117" alt="嘉義市"
+                target="_blank" title="嘉義市">
+            <area shape="circle" coords="250,455,25" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001116" alt="嘉義縣"
+                target="_blank" title="嘉義縣">
+            <area shape="circle" coords="160,530,35" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001119" alt="台南市"
+                target="_blank" title="台南市">
+            <area shape="circle" coords="235,545,35" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001121" alt="高雄市"
+                target="_blank" title="高雄市">
+            <area shape="circle" coords="235,660,35" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001122" alt="屏東縣"
+                target="_blank" title="屏東縣">
+            <area shape="circle" coords="35,390,45" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001125" alt="澎湖縣"
+                target="_blank" title="澎湖縣">
+            <area shape="circle" coords="105,160,45" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001126" alt="金門縣"
+                target="_blank" title="金門縣">
+            <area shape="circle" coords="125,40,30" href="https://www.taiwan.net.tw/m1.aspx?sNo=0001127" alt="連江縣"
+                target="_blank" title="連江縣">
+
+        </map>
+        <br>
+        <br>
+        <br>
+
+    </section>
+    <a href="home.html" class="home-button">首頁</a>
+    <button onclick="scrollToTop()" id="topBtn" title="回到頂部">Top</button>
+    <script>
+        // 當窗口滾動時調用 scrollFunction 函數
+        window.onscroll = function () { scrollFunction() };
+
+        // 定義 scrollFunction 函數，控制回到頂部按鈕的顯示和隱藏
+        function scrollFunction() {
+            // 獲取回到頂部按鈕的 DOM 元素
+            var topBtn = document.getElementById("topBtn");
+
+            // 判斷頁面滾動位置，若滾動超過 20px，顯示按鈕，否則隱藏按鈕
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        }
+
+        // 定義 scrollToTop 函數，實現平滑滾動回到頁面頂部
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // 滾動到頂部，並設置平滑滾動效果
+        }
+    </script>
+</body>
+
+</html>

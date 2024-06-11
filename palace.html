@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故宮</title>
+    <style>
+        h1 {
+            color: #007bff;
+            text-align: center;
+        }
+
+        body {
+            padding: 50px;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #edaa1b;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+            /* 确保按钮在伪元素上方 */
+        }
+
+        .home-button:hover {
+            background-color: #d19316;
+        }
+
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            /* 圓形 */
+        }
+
+        #topBtn:hover {
+            background-color: #333;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="color: blue;">故宮</h1>
+    <div style="text-align: center; background-color: aquamarine;">
+        <hr>
+        <a href="https://www.npm.gov.tw" target="_blank">故宮</a>&emsp;
+        <a href="https://zh.wikipedia.org/zh-tw/%E5%9C%8B%E7%AB%8B%E6%95%85%E5%AE%AE%E5%8D%9A%E7%89%A9%E9%99%A2" target="_blank">維基百科</a>
+        <hr>
+    </div>
+
+
+
+    <body>
+        <div>
+            <p>台灣故宮（National Palace
+                Museum）是位於台灣台北市的一座世界知名的博物館，也是台灣最重要的文化機構之一。這座博物館收藏了大量中國文物，包括絕大多數的中國古代文化遺產，如書畫、古代文書、陶瓷、玉器、金屬器等。</p>
+
+            <h2>歷史沿革</h2>
+            <p>台灣故宮的前身是中國北京故宮的一部分，於抗日戰爭時期由中國國民黨政府遷移到台灣。1950年代初，故宮收藏的文物因戰亂和政治動蕩而遷移至台灣，最終於1965年在台北正式開館。</p>
+
+            <h2>收藏特色</h2>
+            <p>故宮的收藏以中國古代文物為主，包括從新石器時代至清代的文物，總數達數十萬件。其中最知名的藏品包括明代及清代的瓷器、書畫、古籍、玉器、金屬器等。</p>
+
+            <h2>展覽與展示</h2>
+            <p>故宮的常設展覽以定期輪換的方式展示部分收藏，使遊客能夠每次造訪都有不同的體驗。此外，故宮也定期舉辦特展，介紹特定時期或主題的文物。</p>
+
+            <h2>文化價值</h2>
+            <p>台灣故宮是中國文化的重要代表之一，其收藏的文物展示了中國幾千年來的歷史、藝術和文化，對於研究和了解中國文化具有重要價值。</p>
+
+            <h2>遊覽與服務</h2>
+            <p>台灣故宮位於台北市士林區，是一個重要的旅遊景點。博物館提供導覽服務和解說，使遊客能夠更好地理解展品的歷史和背景。此外，故宮還有文化活動、教育活動和學術研究等服務。</p>
+
+        </div>
+
+
+
+
+        <a href="home.html" class="home-button">首頁</a>
+
+        <button onclick="scrollToTop()" id="topBtn" title="回到頂部">Top</button>
+
+        <script>
+            // 顯示/隱藏回到頂部按鈕
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                var topBtn = document.getElementById("topBtn");
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    topBtn.style.display = "block";
+                } else {
+                    topBtn.style.display = "none";
+                }
+            }
+
+            // 平滑滾動到頂部
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        </script>
+
+    </body>
+
+</html>

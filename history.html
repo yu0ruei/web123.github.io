@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歷史</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .home-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #edaa1b;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+            /* 确保按钮在伪元素上方 */
+        }
+
+        .home-button:hover {
+            background-color: #d19316;
+        }
+
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            /* 圓形 */
+        }
+
+        #topBtn:hover {
+            background-color: #333;
+        }
+
+        .timeline {
+            list-style-type: none;
+            padding: 0;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .timeline-item {
+            background-color: #ddd;
+            color: #000;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: blue; text-align: center;">歷史</h1>
+    <div style="text-align: center; background-color: aquamarine;">
+        <hr>
+        <a
+            href="https://zh.wikipedia.org/zh-tw/%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E6%AD%B7%E5%8F%B2%E5%8D%9A%E7%89%A9%E9%A4%A8">歷史博物館</a>&emsp;
+        <a href="https://zh.wikipedia.org/zh-tw/%E8%87%BA%E7%81%A3%E6%AD%B7%E5%8F%B2">維基百科</a>
+        <hr>
+    </div>
+    <p>台灣，這塊富饒而美麗的島嶼，承載著悠久而多元的歷史。從遠古時期的原住民文明開始，這片土地見證了無數事件和變革，形成了今日豐富多彩的面貌。從最早的平埔族和山地族定居，到荷蘭、西班牙的殖民統治，再到清朝的統一統治，每個時期都在台灣留下了獨特的痕跡。
+        在這個前言中，我們將帶您回顧台灣的歷史，探索這個島嶼國家的起源、演變和文化薈萃。從原住民時期的生活和文化開始，穿越荷蘭、西班牙統治時期、清朝統治時期，再到日本統治時期，最終踏上中華民國時期的現代之路。
+        每一個時代都有其獨特的風景和故事，每一個事件都塑造了台灣今日的模樣。讓我們一起走進歷史的長河，探索台灣這塊土地上璀璨的文化遺產和動人的故事。</p>
+    <hr>
+    <h2>目錄</h2>
+    <div id="timeline">
+        <div class="timeline-item" onclick="scrollToSection('ancient-times')">原住民時期</div>
+        <div class="timeline-item" onclick="scrollToSection('medieval-times')">荷蘭、西班牙統治時期</div>
+        <div class="timeline-item" onclick="scrollToSection('early-modern-times')">清朝統治時期</div>
+        <div class="timeline-item" onclick="scrollToSection('japan-times')">日本統治時期</div>
+        <div class="timeline-item" onclick="scrollToSection('modern-times')">中華民國時期</div>
+    </div>
+
+    <h2 id="ancient-times">原住民時期</h2>
+    <p>台灣最早的居民為原住民，大致可分為平埔族和山地族兩大類。他們在台灣生活了數千年，形成了自己獨特的文化、語言和社會組織。這些原住民族群在台灣的歷史非常多樣，每個族群都有著自己深厚的歷史根基，以及獨特的文化風貌和生活方式。他們的文化遺產和傳統知識，如信仰、祭祀、狩獵、農耕等，深深影響著台灣整體社會的發展脈絡。
+    </p>
+    <p>這些原住民族群之間存在著複雜而多元的關係，彼此間的交流、互動和衝突塑造了台灣的多元文化格局。而他們對於土地的感情與依賴，更是體現了台灣與自然環境之間緊密的聯繫。原住民族群的歷史、文化和生活方式，對台灣的歷史發展產生了重要而深遠的影響，成為了台灣多元文化的重要組成部分。
+    </p>
+
+    <h2 id="medieval-times">荷蘭、西班牙統治時期（17世紀）</h2>
+    <p>在荷蘭和西班牙的殖民統治下，台灣成為了東方貿易的重要據點之一。荷蘭人在台灣北部建立了許多堡壘和據點，並對當地的農業、手工業和城市發展做出了重要貢獻。他們帶來了現代化的管理制度和技術，推動了當地經濟的發展。然而，荷蘭人的統治並不普及，僅限於局部地區，且持續時間有限，最終被其他殖民勢力所取代。西班牙人的統治同樣只是短暫的，在台灣南部建立了一些據點，但並未對整個島嶼產生深遠影響。
+    </p>
+    <p>荷蘭統治時期，他們積極參與台灣的農業和手工業，帶來了技術和管理經驗，推動了當地經濟的發展。荷蘭人在台灣建立了大量城堡和據點，其中最著名的是安平古堡，至今仍然是台灣的重要歷史遺跡之一。荷蘭統治時期也是台灣與世界其他地區進行文化交流的時期，帶來了不少當時的先進技術和觀念。
+    </p>
+
+    <h2 id="early-modern-times">清朝統治時期（17世紀後半至19世紀）</h2>
+    <p>清朝在1683年統一台灣，將其納入中國版圖。隨著清朝的統治，台灣逐漸發展成一個農業和商業的重要據點，並成為了中國與東南亞之間的重要貿易樞紐。清朝時期，台灣的社會發展呈現出複雜多樣的特徵，不僅涉及農業和商業，還包括了宗教、文化等各個方面。尤其是在清代後期，台灣與中國其他地區的經濟和文化交流日益頻繁，促進了台灣社會的多元化和繁榮發展。
+    </p>
+    <p>清朝統治下的台灣，農業得到了發展，許多農民開墾了荒地，增加了農產品的生產，促進了經濟的繁榮。同時，清朝政府實行了一系列的改革政策，包括推行科舉制度、發展水利等，這些都對台灣的社會和經濟發展起到了積極的推動作用。在宗教和文化方面，清朝時期的台灣出現了許多寺廟和學堂，豐富了當地的文化生活，促進了文化的融合與發展。
+    </p>
+
+    <h2 id="japan-times"> 日本統治時期（1895-1945年）</h2>
+    <p>1895年，清朝在甲午戰爭中戰敗，被迫簽訂《馬關條約》，割讓台灣及澎湖給日本。從此，台灣進入了日本的殖民統治時期，持續了將近五十年的時間。日本政府實施了嚴格的統治政策，包括改革台灣的行政體系、教育制度以及基礎設施建設。這些措施對台灣社會產生了深遠的影響，從政治、經濟到文化各個方面都有所改變。
+    </p>
+    <p>在政治上，日本殖民政府實施了嚴格的統治措施，限制了台灣人民的言論自由和政治權利，並推行了日本化政策，強迫台灣人民接受日本文化和價值觀。在經濟方面，日本政府進行了現代化的基礎設施建設，促進了台灣的工業化和城市化進程，但同時也壓迫了台灣農民，使其生活受到影響。在文化方面，日本政府試圖消除台灣的文化差異，推行了強制的日本化教育和文化政策，導致了台灣傳統文化的衰退和失傳。
+    </p>
+    <p>儘管日本統治帶來了一些現代化的建設和技術進步，但同時也對台灣社會造成了壓迫和歧視。台灣人民在日本統治時期面臨著各種不公平對待和歧視，並遭受了嚴重的剝削和壓迫。然而，台灣人民在這段艱難的時期展現了巨大的韌性和抗爭精神，維護了自己的尊嚴和權利，為台灣的未來奠定了堅實的基礎。
+    </p>
+
+    <h2 id="modern-times">中華民國時期（1945年至今）</h2>
+    <p>第二次世界大戰結束後，中國國民政府接管了台灣，成立了中華民國政府。然而，這段時期的台灣並非一帆風順，而是經歷了許多波折和變革。最初，隨著政權轉移，台灣進入了戒嚴時期，政治體制嚴密控制，社會秩序動盪不安。然而，這一時期也見證了民主化運動的蓬勃興起，台灣人民紛紛爭取更大的言論自由和政治權利。
+    </p>
+    <p>隨著時間的推移，政治氛圍逐漸開放，政黨輪替成為可能，民主制度逐漸鞏固。這些政治發展對台灣的現代化和民主化進程產生了重要影響，使得台灣成為一個多元文化、繁榮富裕的地區。</p>
+    <p>當代的台灣擁有著蓬勃發展的經濟和先進的科技產業，成為亞洲地區的經濟重鎮之一。同時，台灣也面臨著來自政治、經濟和地緣政治等方面的各種挑戰，包括與中國大陸的關係、環境保護、社會不平等等問題。儘管如此，台灣仍保持著穩定的發展和獨特的文化魅力，吸引著世界各地的目光。
+    </p>
+
+
+    <hr>
+    <p>這些重要時期和里程碑承載了台灣作為一個島嶼國家的多樣性和複雜性。從原住民時期到現代，每一個時代都留下了深遠的影響，塑造了台灣的文化、社會和政治面貌。這些時期的轉變和發展反映了台灣人民的努力和抗爭，也展現了他們對自由、民主和繁榮的渴望。透過這些歷史時期的研究和理解，我們能更好地領略台灣的過去，進而更好地理解和尊重台灣當前的多元文化和價值觀。
+    </p>
+
+
+    <a href="home.html" class="home-button">首頁</a>
+
+    <button onclick="scrollToTop()" id="topBtn" title="回到頂部">Top</button>
+
+    <script>
+        // 監聽滾動事件，以顯示/隱藏回到頂部按鈕
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            var topBtn = document.getElementById("topBtn");
+            // 若滾動距離超過 20 像素，則顯示按鈕，否則隱藏
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        }
+
+        // 平滑滾動到頂部
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // 平滑滾動到特定章節
+        function scrollToSection(sectionId) {
+            // 取得特定章節的元素
+            const section = document.getElementById(sectionId);
+            // 若存在該章節，則以平滑滾動至該章節的開頭位置
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+    </script>
+</body>
+
+</html>
